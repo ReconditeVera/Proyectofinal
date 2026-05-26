@@ -1,15 +1,29 @@
-# 🐾 Sistema de Gestión de Citas Veterinarias
+instrucciones de instalacion y ejecución
 
-Proyecto final de Desarrollo Web I - CRUD con PHP/PDO/MySQL/Docker
+debes tener:
 
-## 📋 Requisitos
+instalados Docker, sql y un navegador, obvi 
 
-- Docker y Docker Compose instalados
-- Navegador web moderno
+instalar y ejecutar
 
-## 🚀 Ejecución del Proyecto
+1.Clona el repositorio y entra a la carpeta principal:
 
-1. Clonar el repositorio:
-```bash
 git clone https://github.com/ro11dan/Proyecto-final-web1.git
 cd Proyecto-final-web1/PDO_PHP
+
+2.Construye y arranca el proyecto:
+
+docker compose up -d --build
+
+
+3.Abre el sistema en tu navegador web:
+http://localhost:8085
+
+
+Para detener el proyecto:
+
+docker compose down
+
+Para reiniciar desde cero 
+docker compose down -v
+docker compose up -d --build
